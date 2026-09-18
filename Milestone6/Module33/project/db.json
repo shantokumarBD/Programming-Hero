@@ -1,0 +1,125 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "age": 25,
+      "city": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "age": 28,
+      "city": "London"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael@example.com",
+      "age": 32,
+      "city": "Toronto"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily@example.com",
+      "age": 24,
+      "city": "Sydney"
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "email": "david@example.com",
+      "age": 30,
+      "city": "Chicago"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Taylor",
+      "email": "sophia@example.com",
+      "age": 27,
+      "city": "Melbourne"
+    },
+    {
+      "id": 7,
+      "name": "James Anderson",
+      "email": "james@example.com",
+      "age": 35,
+      "city": "Los Angeles"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Thomas",
+      "email": "olivia@example.com",
+      "age": 22,
+      "city": "Paris"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Martinez",
+      "email": "daniel@example.com",
+      "age": 29,
+      "city": "Madrid"
+    },
+    {
+      "id": 10,
+      "name": "Emma Garcia",
+      "email": "emma@example.com",
+      "age": 26,
+      "city": "Barcelona"
+    }
+  ],
+
+  "books": [
+    {
+      "id": 1,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "price": 12.99,
+      "publishedYear": 1988
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "price": 10.99,
+      "publishedYear": 1949
+    },
+    {
+      "id": 3,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "price": 14.99,
+      "publishedYear": 1960
+    },
+    {
+      "id": 4,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self-Help",
+      "price": 16.99,
+      "publishedYear": 2018
+    },
+    {
+      "id": 5,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "price": 13.99,
+      "publishedYear": 1937
+    },
+    {
+      "id": 6,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Classic",
+      "price": 9.99,
+      "publishedYear": 1925
+    }
+  ]
+}
