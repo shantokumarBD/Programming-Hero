@@ -1,8 +1,8 @@
 
-
+// SSG 
 const getApi = async() =>{
     try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts', {cache:"force-cache"})
         return res.json()
     } catch (error) {
         throw new Error("Failed to fetch posts")
