@@ -1,3 +1,5 @@
+import ReadButton from '@/app/components/booksButton/ReadButton'
+import WishListButton from '@/app/components/booksButton/WishListButton'
 import { getBooks } from '@/app/lib/getBooks'
 import Image from 'next/image'
 
@@ -91,12 +93,8 @@ const BookDetailsPage = async ({ params }: BookDetailsProps) => {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-4 pt-2">
-                        <button className="btn btn-primary text-white px-8 h-12 text-base font-semibold">
-                            Read
-                        </button>
-                        <button className="btn btn-outline px-8 h-12 text-base font-semibold">
-                            Wishlist
-                        </button>
+                        <ReadButton book={book}></ReadButton>
+                        <WishListButton book={book}></WishListButton>
                     </div>
                 </div>
             </div>
@@ -110,4 +108,4 @@ const BookDetailsPage = async ({ params }: BookDetailsProps) => {
     )
 }
 
-export default BookDetailsPage
+export default BookDetailsPage
