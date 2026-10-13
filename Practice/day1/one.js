@@ -7,23 +7,29 @@
 // Output: null
 
 const findSecondSmallest = (nums) => {
-  if (nums.length < 2) {
-    return null;
-  }
-  let firstNum = Infinity;
-  let secondNum = Infinity;
 
-  for (let i = 0; i < nums.length; i++) {
-
-    if(nums[i] < firstNum){
-        secondNum = firstNum;
-        firstNum = nums[i];
-    }else if(nums[i] < secondNum && nums[i] !== firstNum){
-        secondNum = nums[i]
-    }
+  if(!Array.isArray && nums.length < 2){
+    return null
   }
 
-  return secondNum;
+  let min = nums[0]
+  let secondmin = null
+
+  for(snum of nums){
+    // console.log(snum);
+
+    if(snum === min)continue
+
+    if(snum < min){
+      secondmin = min 
+      min = snum
+    } 
+    else if(snum < secondmin || secondmin === null){
+      secondmin = snum
+    } 
+  }
+
+  return secondmin
 };
 
 console.log(findSecondSmallest([5, 2, 8, 1, 5]));
