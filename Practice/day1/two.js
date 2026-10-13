@@ -8,22 +8,23 @@
 
 
 const findSecondLargest = (nums) => {
-    if(nums.length < 2){
+    if(!Array.isArray(nums) || nums.length < 2){
         return null
     }
-    let findFirstLargest = -Infinity;
-    let findSecondLargest = -Infinity;
 
-    for(let i = 0; i <nums.length; i++){
-        if(nums[i] > findFirstLargest){
-            findSecondLargest = findFirstLargest
-            findFirstLargest = nums[i]
-        }else if(nums[i] > findSecondLargest && nums[i] !== findFirstLargest){
-            findSecondLargest = nums[i]
+    let max = nums[0]
+    let secmax = null
+
+    for(let num of nums){
+        if(num === max) continue
+        if(max < num){
+            secmax = max
+            max = num
+        }
+        else if(secmax === null || secmax < num ) {
+            secmax = num
         }
     }
-
-    return findSecondLargest
-
+    return secmax
 }
 console.log(findSecondLargest([10, 40, 20, 40, 30]));

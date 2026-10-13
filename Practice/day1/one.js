@@ -8,7 +8,7 @@
 
 const findSecondSmallest = (nums) => {
 
-  if(!Array.isArray && nums.length < 2){
+  if(!Array.isArray(nums) || nums.length < 2){
     return null
   }
 
@@ -24,7 +24,7 @@ const findSecondSmallest = (nums) => {
       secondmin = min 
       min = snum
     } 
-    else if(snum < secondmin || secondmin === null){
+    else if( secondmin === null || snum < secondmin ){
       secondmin = snum
     } 
   }
