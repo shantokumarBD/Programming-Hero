@@ -8,21 +8,21 @@
 // Output: 0
 
 const findDifference = (nums) => {
-    if(nums.length < 2 ){
-        return 0
+    if(!Array.isArray(nums) || nums.length < 2){
+        return null
     }
-    let maxNum = -Infinity;
-    let minNum = Infinity
+    let max = nums[0]
+    let min = nums[0]
+    for(let num of nums){
+        if(num > max){
+            max = num
+        }
+        if(num < min){
+            min = num
+        }
+    }
 
-    for (let i = 0; i <nums.length; i++){
-        if(nums[i] > maxNum){
-            maxNum = nums[i] 
-        }
-        if(nums[i] < minNum){
-            minNum = nums[i]
-        }
-    }
-    return maxNum - minNum
+    return max - min 
 }
 
 console.log(findDifference([10, 5, 20, 2, 8]));
